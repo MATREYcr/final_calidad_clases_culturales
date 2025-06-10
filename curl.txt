@@ -1,0 +1,49 @@
+curl -X GET http://localhost:8080/api/cultural-classes
+
+
+curl -X GET http://localhost:8080/api/cultural-classes/123
+
+curl -X POST http://localhost:8080/api/cultural-classes \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Guitarra Básica",
+    "description": "Aprende los fundamentos de la guitarra",
+    "startDateTime": 1720095600,
+    "endDateTime": 1720102800,
+    "maxCapacity": 20
+  }'
+
+
+curl -X PUT http://localhost:8080/api/cultural-classes/123 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Guitarra Intermedia",
+    "description": "Curso avanzado",
+    "startDateTime": 1720182000,
+    "endDateTime": 1720189200,
+    "maxCapacity": 15
+  }'
+
+curl -X DELETE http://localhost:8080/api/cultural-classes/123
+
+
+
+
+
+
+ENROLLMENTS:
+
+curl -X POST http://localhost:8080/api/enrollments \
+  -H "Content-Type: application/json" \
+  -d '{
+    "studentName": "Juan Pérez",
+    "classId": 42,
+    "enrollmentDateTime": 1720099200000
+
+
+  }'
+curl -X DELETE http://localhost:8080/api/enrollments/123
+
+
+
+curl -X GET http://localhost:8080/api/enrollments/class/42
