@@ -1,0 +1,48 @@
+
+.main-layout {
+  min-height: 100vh;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.app-logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.app-logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.app-menu {
+  flex: 1;
+  min-width: 0;
+  justify-content: flex-end;
+}
+
+.main-content {
+  padding: 0 50px;
+}
+
+.content-wrapper {
+  padding: 24px;
+  min-height: 380px;
+  margin-top: 24px;
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.main-footer {
+  text-align: center;
+  margin-top: 24px;
+}

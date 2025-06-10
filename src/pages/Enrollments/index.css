@@ -1,0 +1,13 @@
+.enrollments-header-space {
+  margin-bottom: 16px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.enrollments-class-select-group .ant-typography-text {
+  font-weight: bold;
+}
+
+.full-width-input, .full-width-select {
+  width: 100% !important;
+}
